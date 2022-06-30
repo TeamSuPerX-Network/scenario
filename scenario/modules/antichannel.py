@@ -11,8 +11,8 @@ from .. import pgram
     |----╒════════════╕----|
           |  Kang with credits |
           |----- Coded by: ----|
-          |       @CoderX      |
-          |----(2142595466)----|
+          |       @BlaZe_Owner      |
+          |----(5414624328)----|
           |      on telegram   |
     |----╘════════════╛----|
 
