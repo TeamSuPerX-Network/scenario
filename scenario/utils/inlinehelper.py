@@ -75,7 +75,7 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**[Scenario](https://github.com/TeamScenario/Scenario):**
+**[Siyana](t.me/Official_SH4DOW_xD):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9`
@@ -102,7 +102,7 @@ async def webss(url):
     start_time = time()
     if "." not in url:
         return
-    screenshot = await fetch(f"https://patheticprogrammers.cf/ss?site={url}")
+    screenshot = await fetch(f"https://t.me/Siyana_Support.cf/ss?site={url}")
     end_time = time()
     # m = await app.send_photo(LOG_GROUP_ID, photo=screenshot["url"])
     await m.delete()
