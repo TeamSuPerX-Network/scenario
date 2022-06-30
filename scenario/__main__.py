@@ -73,12 +73,12 @@ async def awake(event):
   scenario = "**♡ I,m scenario** \n\n"
   scenario += "**♡ I'm Working With Awesome Speed**\n\n"
   scenario += "**♡ Scenario: LATEST Version**\n\n"
-  scenario += "**♡ My Creator:** [TeamScenario](t.me/TeamScenario)\n\n"
+  scenario += "**♡ My Creator:** [「™</Official ⛦ Sh4dow xͮD ❥︎︎」](t.me/Official_SH4DOW_xD)\n\n"
   scenario += "**♡ Python-Telegram-Bot: v13.7**\n\n"
   scenario_BUTTON = [
       [
-          Button.url("Support", f"https://t.me/{SUPPORT_CHAT}"),
-          Button.url("Updates", f"https://t.me/{UPDATES_CHANNEL}"),
+          Button.url("✦ Support", f"https://t.me/{SUPPORT_CHAT}"),
+          Button.url("Updates ✦", f"https://t.me/{UPDATES_CHANNEL}"),
       ]
   ]
   await telethn.send_file(
@@ -117,7 +117,7 @@ HELP_MSG = "Click the button below to get help manu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
     
 PM_START_TEXT = """
-────「 [Scenario](https://telegra.ph/file/7b8c52bd4c7b8b35ece20.jpg) 」────
+────「 [Siyana Robot](https://telegra.ph/file/7b8c52bd4c7b8b35ece20.jpg) 」────
 *Hola! {},*
 *I am {} Anime themed advance group management bot with a lot of Sexy Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -135,24 +135,24 @@ Haven't slept since: {}
 buttons = [
     [
                         InlineKeyboardButton(
-                            text=f"⚓ ❄️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❄️ ⚓",
+                            text=f"⚓ ❄️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ❄️ ⚓",
                             url="https://t.me/ScenarioXbot?startgroup=true")
                     ],
                    [
-                       InlineKeyboardButton(text="☘️ ᴀʙᴏᴜᴛ ☘️", callback_data="scenario_"),
-                       InlineKeyboardButton(text="⚔️ ɪɴʟɪɴᴇ ⚔️", switch_inline_query_current_chat=""),
+                       InlineKeyboardButton(text="💻 Aʙᴏᴜᴛ ", callback_data="scenario_"),
+                       InlineKeyboardButton(text=" Iɴʟɪɴᴇ 🏷️", switch_inline_query_current_chat=""),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="✨ sᴜᴘᴘᴏʀᴛ ✨",
+                             text="✦ Sᴜᴘᴘᴏʀᴛ ",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
-                             text="✨ ᴜᴩᴅᴀᴛᴇs ✨",
+                             text=" Uᴩᴅᴀᴛᴇs ✦",
                              url=f"https://t.me/{UPDATES_CHANNEL}")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🔰 ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs 🔰", callback_data="help_back"
+                             text="💻 Hʟʟ & Cᴏᴍᴍᴀɴᴅs 💻", callback_data="help_back"
                          ),
                      ],
     ]
