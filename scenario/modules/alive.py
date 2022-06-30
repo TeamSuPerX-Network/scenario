@@ -23,12 +23,12 @@ PHOTO = [
 
 @register(pattern=("/alive"))
 async def awake(event):
-  TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ scenario~**\n━━━━━━━━━━━━━━━━━━━\n\n"
-  TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [Team Scenario](https://t.me/TeamScenario)** \n\n"
-  TEXT += f"» **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{telever}` \n\n"
-  TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tlhver}` \n\n"
-  TEXT += f"» **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyrover}` \n━━━━━━━━━━━━━━━━━\n\n"
-  BUTTON = [[Button.url("ʜᴇʟᴘ​", "https://t.me/ScenarioXbot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ​", f"https://t.me/{SUPPORT_CHAT}")]]
+  TEXT = f"**Hᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nI Aᴍ Siyana~**\n━━━━━━━━━━━━━━━━━━━\n\n"
+  TEXT += f"» **Mʏ Dᴇᴠᴇʟᴏᴘᴇʀ​ : [Sh4adow](https://t.me/Unknown_SH4DOW_xD)** \n\n"
+  TEXT += f"» **Lɪʙʀᴀʀʏ Vᴇʀsɪᴏɴ :** `{telever}` \n\n"
+  TEXT += f"» **Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ :** `{tlhver}` \n\n"
+  TEXT += f"» **Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ :** `{pyrover}` \n━━━━━━━━━━━━━━━━━\n\n"
+  BUTTON = [[Button.url("💻 Տᴜᴘᴘᴏʀᴛ​", "t.me/Siyana_Updates"), Button.url("ႮᴘᴅᴀᴛᴇՏ 💻​", f"https://t.me/{SUPPORT_CHAT}")]]
   ran = random.choice(PHOTO)
   await tbot.send_file(event.chat_id, ran, caption=TEXT,  buttons=BUTTON)
 
