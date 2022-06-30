@@ -70,9 +70,9 @@ from telethon import Button, events
 @telethn.on(events.NewMessage(pattern="/alive"))
 async def awake(event):
   scenario = event.sender.first_name
-  scenario = "**♡ I,m scenario** \n\n"
+  scenario = "**♡ I,m Siyana** \n\n"
   scenario += "**♡ I'm Working With Awesome Speed**\n\n"
-  scenario += "**♡ Scenario: LATEST Version**\n\n"
+  scenario += "**♡ Siyana: LATEST Version**\n\n"
   scenario += "**♡ My Creator:** [「™</Official ⛦ Sh4dow xͮD ❥︎︎」](t.me/Official_SH4DOW_xD)\n\n"
   scenario += "**♡ Python-Telegram-Bot: v13.7**\n\n"
   scenario_BUTTON = [
@@ -135,8 +135,8 @@ Haven't slept since: {}
 buttons = [
     [
                         InlineKeyboardButton(
-                            text=f"⚓ ❄️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ❄️ ⚓",
-                            url="https://t.me/ScenarioXbot?startgroup=true")
+                            text=f"❄️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ❄️",
+                            url="https://t.me/Siyanarobot?startgroup=true")
                     ],
                    [
                        InlineKeyboardButton(text="💻 Aʙᴏᴜᴛ ", callback_data="scenario_"),
@@ -291,11 +291,11 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Support",
+                            text="✦ Sᴜᴘᴘᴏʀᴛ",
                             url=f"https://t.me/{SUPPORT_CHAT}",
                         ),
                         InlineKeyboardButton(
-                            text="Updates",
+                            text="Uᴩᴅᴀᴛᴇs ✦",
                             url=f"https://t.me/{UPDATES_CHANNEL}",
                         ),
                     ]
@@ -358,10 +358,10 @@ def scenario_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Support", url=f"t.me/{SUPPORT_CHAT}"
+                            text="✦ Sᴜᴘᴘᴏʀᴛ", url=f"t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="Updates", url=f"t.me/{UPDATES_CHANNEL}"
+                            text="Uᴩᴅᴀᴛᴇs ✦", url=f"t.me/{UPDATES_CHANNEL}"
                         ),
                     ],
                     [InlineKeyboardButton(text="Home", callback_data="all_cmds")],
@@ -409,7 +409,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "╒═══「☘️ help for *{}* ☘️」═══\n".format(
+                "╒═══「💻 help for *{}* 💻」═══\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
