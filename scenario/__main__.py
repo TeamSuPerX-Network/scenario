@@ -117,7 +117,7 @@ HELP_MSG = "Click the button below to get help manu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
     
 PM_START_TEXT = """
-────「 [Siyana Robot](https://telegra.ph/file/7b8c52bd4c7b8b35ece20.jpg) 」────
+────「 [Siyana Robot](https://telegra.ph/file/77ecd1ccfd34331f353eb.jpg) 」────
 *Hola! {},*
 *I am {} Anime themed advance group management bot with a lot of Sexy Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
