@@ -33,7 +33,7 @@ async def awake(event):
   await tbot.send_file(event.chat_id, ran, caption=TEXT,  buttons=BUTTON)
 
 __help__ = """
-/epo - Get repo
+/repo - Get repo
 /alive - Alive status
 """
 
