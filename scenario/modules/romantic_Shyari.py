@@ -9,8 +9,8 @@ from scenario import pgram as scenario
     |----╒════════════╕----|
           |  Kang with credits |
           |----- Coded by: ----|
-          |       @CoderX      |
-          |----(2142595466)----|
+          | @Official_SH4DOW_xD      |
+          |----(5478787123)----|
           |      on telegram   |
     |----╘════════════╛----|
 """
