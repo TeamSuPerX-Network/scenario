@@ -446,8 +446,8 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/TeamScenario)\n\n"
-            + "╘══「 by [Team Scenario](https://github.com/TeamScenario) 」\n",
+            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/siyana_Updates)\n\n"
+            + "╘══「 Powered by- [Team Sh4dow](t.me/Official_SH4DOW_xD) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
@@ -459,9 +459,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/TeamScenario)\n\n"
+                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/siyana_Updates)\n\n"
                 )
-                + "╘══「 by [Team Scenario](https://github.com/TeamScenario) 」\n"
+                + "╘══「 Powered by- [Team Siyana](t.me/Siyana_Support) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -591,7 +591,7 @@ When marked as AFK, any mentions will be replied to with a message stating that 
   - brb <reason>: Same as the afk command, but not a command.\n 
   
 *What is that health thingy?*
- Come and see [HP System explained](https://t.me/TeamScenario/13)
+ Come and see [HP System explained](https://t.me/Siyana_Updates)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio, run_async=True)
