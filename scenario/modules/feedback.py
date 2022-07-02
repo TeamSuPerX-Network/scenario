@@ -21,8 +21,8 @@ from scenario.utils.errors import capture_err
     |----╒════════════╕----|
           |  Kang with credits |
           |----- Coded by: ----|
-          |       @CoderX      |
-          |----(2142595466)----|
+          |       @Official_SH4DOW_xD      |
+          |----(5478787123)----|
           |      on telegram   |
     |----╘════════════╛----|
 """
@@ -47,7 +47,7 @@ async def feedback(_, msg: Message):
     if msg.chat.username:
         chat_username = (f"@{msg.chat.username}/`{msg.chat.id}`")
     else:
-        chat_username = (f"ᴩʀɪᴠᴀᴛᴇ ɢʀᴏᴜᴩ/`{msg.chat.id}`")
+        chat_username = (f"Pʀɪᴠᴀᴛᴇ Gʀᴏᴜᴩ/`{msg.chat.id}`")
 
     feedback = content(msg)
     user_id = msg.from_user.id
@@ -55,7 +55,7 @@ async def feedback(_, msg: Message):
     datetimes_fmt = "%d-%m-%Y"
     datetimes = datetime.utcnow().strftime(datetimes_fmt)
 
-    thumb = "https://telegra.ph/file/9674161b0ce0b3911b830.jpg"
+    thumb = "https://telegra.ph/file/cd566609408de8b88cf52.jpg"
     
     feedback_report = f"""
 **#Feedback : ** **@{owner_usn}**
