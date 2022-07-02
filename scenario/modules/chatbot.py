@@ -51,7 +51,7 @@ def kukirm(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "Scenario ai Disabled By {}.".format(
+                "Siyana ai Disabled By {}.".format(
                     mention_html(user.id, user.first_name)
                 ),
                 parse_mode=ParseMode.HTML,
@@ -80,7 +80,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "Scenario ai Enabled By {}.".format(
+                "Siyana ai Enabled By {}.".format(
                     mention_html(user.id, user.first_name)
                 ),
                 parse_mode=ParseMode.HTML,
@@ -98,8 +98,8 @@ def kuki(update: Update, context: CallbackContext):
     msg = "Choose an option My Boss"
     keyboard = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton(text="ᴇɴᴀʙʟᴇ", callback_data="add_chat({})")],
-            [InlineKeyboardButton(text="ᴅɪsᴀʙʟᴇ", callback_data="rm_chat({})")],
+            [InlineKeyboardButton(text="Eɴᴀʙʟᴇ", callback_data="add_chat({})")],
+            [InlineKeyboardButton(text="Dɪsᴀʙʟᴇ", callback_data="rm_chat({})")],
         ]
     )
     message.reply_text(
