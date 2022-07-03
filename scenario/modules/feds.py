@@ -980,12 +980,12 @@ async def repo(client, message):
     await message.reply_photo(
         photo=ANON,
         caption=f"""**Hᴇʏ​ {message.from_user.mention()},\n\nI Aᴍ [Siyana](t.me/Siyana_Robot)**
-**» Mʏ Dᴇᴠᴇʟᴏᴘᴇʀ​ :** [Team BlaZe](https://t.me/TheBlazeNetwork)
+**» Mʏ Dᴇᴠᴇʟᴏᴘᴇʀ​ :** [Official Sh4adow](https://t.me/Official_SH4DOW_xD)
 **» Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ :** `{y()}`
 **» Lɪʙʀᴀʀʏ Vᴇʀsɪᴏɴ :** `{o}` 
 **» Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ :** `{s}` 
 **» Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ :** `{z}`
-**Sᴄᴇɴᴀʀɪᴏ Sᴏᴜʀᴄᴇ Is Nᴏᴡ Pᴜʙʟɪᴄ Aɴᴅ Nᴏᴡ Yᴏᴜ Cᴀɴ Mᴀᴋᴇ Yᴏᴜʀ Oᴡɴ Bᴏᴛ.**
+**Sɪʏᴀɴᴀ Sᴏᴜʀᴄᴇ Is Nᴏᴡ Pʀɪᴠᴀᴛᴇ Aɴᴅ Nᴏᴡ Yᴏᴜ Cᴀɴ Mᴀᴋᴇ Yᴏᴜʀ Oᴡɴ Bᴏᴛ.**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
