@@ -135,7 +135,7 @@ buttons = [
     [
                         InlineKeyboardButton(
                             text=f"❄️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ❄️",
-                            url="https://t.me/Siyanarobot?startgroup=true")
+                            url="https://t.me/Siyana_robot?startgroup=true")
                     ],
                    [
                        InlineKeyboardButton(text="💻 Aʙᴏᴜᴛ ", callback_data="scenario_"),
