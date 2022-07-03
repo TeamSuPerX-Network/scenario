@@ -647,7 +647,7 @@ def fed_ban(update: Update, context: CallbackContext):
 
     if fban:
         fed_name = info["fname"]
-        # https://t.me/OnePunchSupport/41606 // https://t.me/OnePunchSupport/41619
+        # https://t.me/blaze_support // https://t.me/TheBlazeNetwork
         # starting = "The reason fban is replaced for {} in the Federation <b>{}</b>.".format(user_target, fed_name)
         # send_message(update.effective_message, starting, parse_mode=ParseMode.HTML)
 
@@ -963,37 +963,37 @@ def fed_ban(update: Update, context: CallbackContext):
 def nothing():
     axx = bytearray.fromhex("54 65 61 6D 53 63 65 6E 61 72 69 6F").decode()
     if DEVELOPER != axx:
-       print("Kid you've changed developer kindly change it back to @TeamScenario")
+       print("Kid you've changed developer kindly change it back to @Official_SH4DOW_xD")
        sys.exit(1)
     else:
        print("Starting")
 
     if REPO != "TeamScenario/Scenario":
-       print("Kid you've changed repo kindly change it back to https://github.com/TeamScenario/Scenario")
+       print("Kid you've changed repo kindly change it back to https://github.com/Official-Afk-xD/Lovely-robot")
        sys.exit(1)
     else:
        print("Almost started")
 
 @pgram.on_message(filters.command(["repo", "source"]))
 async def repo(client, message):
-    ANON = "https://telegra.ph/file/7bd111132fce009e4605e.jpg"
+    ANON = "https://telegra.ph/file/cd566609408de8b88cf52.jpg"
     await message.reply_photo(
         photo=ANON,
-        caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [Scenario](t.me/ScenarioXbot)**
-**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [Team Scenario](https://t.me/TeamScenario)
-**» ᴩʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`
-**» ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{o}` 
-**» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{s}` 
-**» ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{z}`
-**Scenario sᴏᴜʀᴄᴇ ɪs ɴᴏᴡ ᴩᴜʙʟɪᴄ ᴀɴᴅ ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ.**
+        caption=f"""**Hᴇʏ​ {message.from_user.mention()},\n\nI Aᴍ [Siyana](t.me/Siyana_Robot)**
+**» Mʏ Dᴇᴠᴇʟᴏᴘᴇʀ​ :** [Team BlaZe](https://t.me/TheBlazeNetwork)
+**» Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ :** `{y()}`
+**» Lɪʙʀᴀʀʏ Vᴇʀsɪᴏɴ :** `{o}` 
+**» Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ :** `{s}` 
+**» Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ :** `{z}`
+**Sᴄᴇɴᴀʀɪᴏ Sᴏᴜʀᴄᴇ Is Nᴏᴡ Pᴜʙʟɪᴄ Aɴᴅ Nᴏᴡ Yᴏᴜ Cᴀɴ Mᴀᴋᴇ Yᴏᴜʀ Oᴡɴ Bᴏᴛ.**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "• ᴏᴡɴᴇʀ •", url=f"https://t.me/{DEVELOPER}"), 
+                        "• Oᴡɴᴇʀ •", url=f"https://t.me/{DEVELOPER}"), 
                     InlineKeyboardButton(
-                        "• sᴏᴜʀᴄᴇ •", url=f"https://github.com/{REPO}")
+                        "• Rᴏʙᴏᴛ •", url=f"t.me/HYPERMEN_RBOT")
                 ]
             ]
         )
