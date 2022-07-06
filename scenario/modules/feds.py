@@ -991,7 +991,7 @@ async def repo(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "• Oᴡɴᴇʀ •", url=f"https://t.me/{DEVELOPER}"), 
+                        "• Oᴡɴᴇʀ •", url=f"https://t.me/Official_sh4dow_xD"), 
                     InlineKeyboardButton(
                         "• Rᴏʙᴏᴛ •", url=f"t.me/HYPERMEN_RBOT")
                 ]
