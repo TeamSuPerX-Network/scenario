@@ -138,7 +138,7 @@ buttons = [
                             url="https://t.me/Siyana_robot?startgroup=true")
                     ],
                    [
-                       InlineKeyboardButton(text="💻 Aʙᴏᴜᴛ ", callback_data="scenario_"),
+                       InlineKeyboardButton(text="💻 Aʙᴏᴜᴛ ", callback_data="scenarioxD__"),
                        InlineKeyboardButton(text="About",callback_data="scenario_"),
                      ],
                     [                  
@@ -349,7 +349,7 @@ def scenario_all_callback(update, context):
 def scenario_about_callback(update, context):
     query = update.callback_query
     first_name = update.effective_user.first_name
-    if query.data == "scenario_":
+    if query.data == "scenarioxD_":
         query.message.edit_text(
             text=f"Hello dear {first_name}, My name is Siyana. A Powerful Telegram Group Management Bot.\n My developer - @Official_SH4DOW_xD\n\nIf you have any Question, You can join our support chat. \nMy developer will help you. \nCheck Link Below",
             disable_web_page_preview=True,
