@@ -139,13 +139,11 @@ buttons = [
                     ],
                    [
                        InlineKeyboardButton(text="💻 Aʙᴏᴜᴛ ", callback_data="scenario_"),
-                       InlineKeyboardButton(
-              text="About",
-              callback_data="shukurenai_"),
+                       InlineKeyboardButton(text="About",callback_data="scenario_"),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="✦ Sᴜᴘᴘᴏʀᴛ ",
+                             text="✦Sᴜᴘᴘᴏʀᴛ ",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
                              text=" Uᴩᴅᴀᴛᴇs ✦",
@@ -373,7 +371,7 @@ def scenario_about_callback(update, context):
 
 def shukurenai_about_callback(update, context):
     query = update.callback_query
-    if query.data == "shukurenai_":
+    if query.data == "scenario_":
         query.message.edit_text(
             text="๏ I'm *GODFATHERBOT*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
@@ -389,18 +387,18 @@ def shukurenai_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="shukurenai_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="shukurenai_notes"),
+                    InlineKeyboardButton(text="Admins", callback_data="scenario_admin"),
+                    InlineKeyboardButton(text="Notes", callback_data="scenario_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="shukurenai_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="shukurenai_credit"),
+                    InlineKeyboardButton(text="Support", callback_data="scenario_support"),
+                    InlineKeyboardButton(text="Credits", callback_data="scenario_credit"),
                  ],
                  [
                     InlineKeyboardButton(text="Try inline!​​", switch_inline_query_current_chat=""), 
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="shukurenai_back"),
+                    InlineKeyboardButton(text="Go Back", callback_data="scenario_back"),
                  ]
                 ]
             ),
@@ -420,7 +418,7 @@ def shukurenai_about_callback(update, context):
                 disable_web_page_preview=False,
         )
 
-    elif query.data == "shukurenai_admin":
+    elif query.data == "scenario_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
             "\nCongragulation, now I'm ready to manage your group."
@@ -433,11 +431,11 @@ def shukurenai_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="shukurenai_")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="scenario_")]]
             ),
         )
 
-    elif query.data == "shukurenai_notes":
+    elif query.data == "scenario_notes":
         query.message.edit_text(
             text=f"<b>๏ Setting up notes</b>"
             f"\nYou can save message/media/audio or anything as notes"
@@ -445,10 +443,10 @@ def shukurenai_about_callback(update, context):
             f"\n\nYou can also set buttons for notes and filters (refer help menu)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="shukurenai_")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="scenario_")]]
             ),
         )
-    elif query.data == "shukurenai_support":
+    elif query.data == "scenario_support":
         query.message.edit_text(
             text="*๏ Anie support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on GodfatherBot.",
@@ -456,11 +454,11 @@ def shukurenai_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="https://t.me/GodfatherSupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/The_Godfather_Network"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/siyana_support"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/siyana_updates"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="shukurenai_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="scenario_"),
                  
                  ]
                 ]
@@ -468,7 +466,7 @@ def shukurenai_about_callback(update, context):
         )
 
 
-    elif query.data == "shukurenai_credit":
+    elif query.data == "scenario_credit":
         query.message.edit_text(
             text=f"๏ Credis for GodfatherBot\n"
             "\nHere Developers Making And Give Inspiration For Made The Anie",
@@ -481,12 +479,12 @@ def shukurenai_about_callback(update, context):
                     InlineKeyboardButton(text="Akki", url="https://t.me/Godfatherakki"), 
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="shukurenai_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="scenario_"),
                  ]
                 ]
             ),
         )
-    elif query.data == "shukurenai_donate":
+    elif query.data == "scenario_donate":
         query.message.edit_text(
             text=f"๏ Donate for GodfatherBot",
             parse_mode=ParseMode.MARKDOWN,
@@ -496,7 +494,7 @@ def shukurenai_about_callback(update, context):
                     InlineKeyboardButton(text="Razorpay", url="https://rzp.io/l/GODFATHERDONATIONS"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="shukurenai_back"),
+                    InlineKeyboardButton(text="Go Back", callback_data="scenario_back"),
                  ]
                 ]
             ),
@@ -522,7 +520,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="shukurenai_")
+                    InlineKeyboardButton(text="Go Back", callback_data="scenario_")
                  ]
                 ]
             ),
