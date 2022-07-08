@@ -1,5 +1,5 @@
 from scenario.modules.helper_funcs.extraction import extract_user
-from scenario.modules.helper_funcs.decorators import scenario
+
 import requests, telegram, datetime, time
 
 
