@@ -368,6 +368,183 @@ def scenario_about_callback(update, context):
             ),
         )
 
+
+def shukurenai_about_callback(update, context):
+    query = update.callback_query
+    if query.data == "shukurenai_":
+        query.message.edit_text(
+            text="๏ I'm *GODFATHERBOT*, a powerful group management bot built to help you manage your group easily."
+            "\n• I can restrict users."
+            "\n• I can greet users with customizable welcome messages and even set a group's rules."
+            "\n• I have an advanced anti-flood system."
+            "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
+            "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
+            "\n• I check for admins' permissions before executing any command and more stuffs"
+            "\n\n_ GodfatherBot licensed under the GNU General Public License v3.0_"
+            "\n\n Click on button bellow to get basic help for Anie.",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Admins", callback_data="shukurenai_admin"),
+                    InlineKeyboardButton(text="Notes", callback_data="shukurenai_notes"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Support", callback_data="shukurenai_support"),
+                    InlineKeyboardButton(text="Credits", callback_data="shukurenai_credit"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Try inline!​​", switch_inline_query_current_chat=""), 
+                 ],
+                 [
+                    InlineKeyboardButton(text="Go Back", callback_data="shukurenai_back"),
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "shukurenai_back":
+        first_name = update.effective_user.first_name
+        uptime = get_readable_time((time.time() - StartTime))
+        query.message.edit_text(
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=False,
+        )
+
+    elif query.data == "shukurenai_admin":
+        query.message.edit_text(
+            text=f"*๏ Let's make your group bit effective now*"
+            "\nCongragulation, now I'm ready to manage your group."
+            "\n\n*Admin Tools*"
+            "\nBasic Admin tools help you to protect and powerup your group."
+            "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
+            "\n\n*Greetings*"
+            "\nLets set a welcome message to welcome new users coming to your group."
+            "\nsend `/setwelcome [message]` to set a welcome message!",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="Go Back", callback_data="shukurenai_")]]
+            ),
+        )
+
+    elif query.data == "shukurenai_notes":
+        query.message.edit_text(
+            text=f"<b>๏ Setting up notes</b>"
+            f"\nYou can save message/media/audio or anything as notes"
+            f"\nto get a note simply use # at the beginning of a word"
+            f"\n\nYou can also set buttons for notes and filters (refer help menu)",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="Go Back", callback_data="shukurenai_")]]
+            ),
+        )
+    elif query.data == "shukurenai_support":
+        query.message.edit_text(
+            text="*๏ Anie support chats*"
+            "\nJoin My Support Group/Channel for see or report a problem on GodfatherBot.",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Support", url="https://t.me/GodfatherSupport"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/The_Godfather_Network"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Go Back", callback_data="shukurenai_"),
+                 
+                 ]
+                ]
+            ),
+        )
+
+
+    elif query.data == "shukurenai_credit":
+        query.message.edit_text(
+            text=f"๏ Credis for GodfatherBot\n"
+            "\nHere Developers Making And Give Inspiration For Made The Anie",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Zaid", url="https://t.me/Timesisnotwaiting"),
+                    InlineKeyboardButton(text="Null", url="https://t.me/Shubhanshutya"),
+                    InlineKeyboardButton(text="Akki", url="https://t.me/Godfatherakki"), 
+                 ],
+                 [
+                    InlineKeyboardButton(text="Go Back", callback_data="shukurenai_"),
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "shukurenai_donate":
+        query.message.edit_text(
+            text=f"๏ Donate for GodfatherBot",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Razorpay", url="https://rzp.io/l/GODFATHERDONATIONS"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Go Back", callback_data="shukurenai_back"),
+                 ]
+                ]
+            ),
+        )
+
+def Source_about_callback(update, context):
+    query = update.callback_query
+    if query.data == "source_":
+        query.message.edit_text(
+            text="๏›› This advance command for Musicplayer."
+            "\n\n๏ Command for admins only."
+            "\n • `/reload` - For refreshing the adminlist."
+            "\n • `/pause` - To pause the playback."
+            "\n • `/resume` - To resuming the playback You've paused."
+            "\n • `/skip` - To skipping the player."
+            "\n • `/end` - For end the playback."
+            "\n • `/musicplayer <on/off>` - Toggle for turn ON or turn OFF the musicplayer."
+            "\n\n๏ Command for all members."
+            "\n • `/play` <query /reply audio> - Playing music via YouTube."
+            "\n • `/playlist` - To playing a playlist of groups or your personal playlist",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Go Back", callback_data="shukurenai_")
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "source_back":
+        first_name = update.effective_user.first_name
+        query.message.edit_text(
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=False,
+        )
+
+
+def get_help(update: Update, context: CallbackContext):
+    chat = update.effective_chat  # type: Optional[Chat]
+    args = update.effective_message.text.split(None, 1)
+
+
 # for test purposes
 def error_callback(update, context):
     """#TODO
