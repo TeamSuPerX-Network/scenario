@@ -139,7 +139,9 @@ buttons = [
                     ],
                    [
                        InlineKeyboardButton(text="💻 Aʙᴏᴜᴛ ", callback_data="scenario_"),
-                       InlineKeyboardButton(text=" Iɴʟɪɴᴇ 🏷️", switch_inline_query_current_chat=""),
+                       InlineKeyboardButton(
+              text="About",
+              callback_data="shukurenai_"),
                      ],
                     [                  
                        InlineKeyboardButton(
